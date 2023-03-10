@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "description": "My TypeScript track in Exercism",
   "scripts": {
+    "prettier:check": "npx prettier --check exercises/**/*.ts",
     "prettier:fix": "npx prettier --write exercises/**/*.ts",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
+    "husky": "^8.0.3",
     "jest": "^29.5.0",
     "prettier": "2.8.4",
     "ts-jest": "^29.0.5",
